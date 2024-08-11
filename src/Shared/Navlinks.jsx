@@ -1,7 +1,4 @@
-// import { useState } from 'react'
 import { GrLogout } from 'react-icons/gr'
-import { FcSettings } from 'react-icons/fc'
-import { NavLink } from 'react-router-dom'
 import { ImCancelCircle } from "react-icons/im";
 
 // eslint-disable-next-line react/prop-types
@@ -27,39 +24,29 @@ const Navlinks = ({ isActive, setActive, links }) => {
                         className='mobile-menu-button p-4 focus:outline-none focus:bg-[#bba684]'
                     >
                         <ImCancelCircle className='h-5 w-5' />
-                    </button> 
+                    </button>
                 </div>
 
                 {/* Nav Items */}
                 <div className='flex flex-col justify-between flex-1 mt-6'>
 
                     {/*  Menu Items */}
-                    {links}
+
+                    <ul className="menu menu-vertical font-bold px-1 space-x-2">
+                        {links}
+                    </ul>
                 </div>
             </div>
 
             <div>
                 <hr />
-
-                {/* Profile Menu */}
-                <NavLink
-                    to='/dashboard/profile'
-                    className={({ isActive }) =>
-                        `flex items-center px-4 py-2 my-5  transition-colors duration-300 transform  hover:bg-[#0d0801]   hover:text-white ${isActive ? 'bg-[#f7ce8c]  text-black' : 'text-black'
-                        }`
-                    }
-                >
-                    <FcSettings className='w-5 h-5' />
-
-                    <span className='mx-4 font-medium'>Profile</span>
-                </NavLink>
                 {/* logout */}
                 <button
                     className='flex w-full items-center px-4 py-2 mt-5 text-black hover:text-white hover:bg-black transition-colors duration-300 transform'
                 >
                     <GrLogout className='w-5 h-5' />
 
-                    <span className='mx-4 font-medium'>Logout</span>
+                    <span className='mx-4 font-medium'>Log IN</span>
                 </button>
             </div>
         </div>

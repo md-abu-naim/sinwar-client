@@ -13,9 +13,36 @@ const Navber = () => {
     }
 
     const links = <>
+        <li className='pl-2'><Link>Brands</Link> </li>
+        <li>
+            <details>
+                <summary>Parent</summary>
+                <ul className="p-2">
+                    <li><a>Submenu 1</a></li>
+                    <li><a>Submenu 2</a></li>
+                </ul>
+            </details>
+        </li>
         <li> <Link>Brands</Link> </li>
         <li> <Link>Brands</Link> </li>
-        <li> <Link>Brands</Link> </li>
+        <li>
+            <details>
+                <summary>Parent</summary>
+                <ul className="p-2">
+                    <li><a>Submenu 1</a></li>
+                    <li><a>Submenu 2</a></li>
+                </ul>
+            </details>
+        </li>
+        <li>
+            <details>
+                <summary>Parent</summary>
+                <ul className="p-2">
+                    <li><a>Submenu 1</a></li>
+                    <li><a>Submenu 2</a></li>
+                </ul>
+            </details>
+        </li>
     </>
     return (
         <>

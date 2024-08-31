@@ -13,7 +13,7 @@ const Navber = () => {
     }
 
     const links = <>
-        <li className='pl-2'><Link>Brands</Link> </li>
+        <li className='pl-2 md:pl-0 border-b-2'><Link to="/">Home</Link> </li>
         <li>
             <details>
                 <summary>Parent</summary>
@@ -23,12 +23,12 @@ const Navber = () => {
                 </ul>
             </details>
         </li>
-        <li> <Link>Brands</Link> </li>
+        <li className='border-b-2'> <Link>Brands</Link> </li>
         <li> <Link>Brands</Link> </li>
         <li>
             <details>
                 <summary>Parent</summary>
-                <ul className="p-2">
+                <ul className="p-2 mr-0 bg-[#BB8C2D]">
                     <li><a>Submenu 1</a></li>
                     <li><a>Submenu 2</a></li>
                 </ul>

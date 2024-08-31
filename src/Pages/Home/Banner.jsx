@@ -20,7 +20,7 @@ const Banner = () => {
                     clickable: true,
                 }}
                 modules={[Autoplay, Pagination]}
-                className="mySwiper h-[450px]"
+                className="mySwiper lg:h-[450px] h-[105px]"
             >
                 <SwiperSlide><img src={banner} alt="" /></SwiperSlide>
                 {/* <SwiperSlide><img src={banner2} alt="" /></SwiperSlide> */}

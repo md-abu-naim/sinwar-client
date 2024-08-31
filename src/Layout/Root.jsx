@@ -3,7 +3,7 @@ import Navber from "../Shared/Navber";
 
 const Root = () => {
     return (
-        <div className="">
+        <div className="font-serif text-black">
             <Navber />
             <Outlet />
         </div>
